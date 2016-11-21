@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+        "id": 1,
+        "name": "Super Tires",
+        "description": "These tires are made of vibranium",
+        "inStock": 0,
+        "price": 1299,
+        "isFeatured": false,
+        "quantity": 0,
+
+    },
+    {
+        "id": 2,
+        "name": "Mega Tires",
+        "description": "These tires are made of adamantium",
+        "inStock": 8,
+        "price": 1899,
+        "isFeatured": true,
+        "quantity": 0,
+
+    },
+  ]
+}

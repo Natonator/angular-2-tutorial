@@ -1,0 +1,12 @@
+<ul class="items">
+  <li *ngFor="let race of races" [class.featured]="race.isFeatured">
+      <h2>{{race.name}}</h2>
+      <img [src]="race.image" [alt]="race.imageDescription" />
+      <p>{{race.date | date:"MMM d, y, h:mm a":true}}</p>
+      <p>{{race.about}}</p>
+      <button *ngIf="!race.isRacing" >Enter Race</button>
+      <h3 *ngIf="race.isRacing" >Already Racing</h3>
+  </li>
+</ul>
+
+<h3>Total Racing Cost: {{totalCost() | currency:'USD':true}}</h3>
